@@ -1,0 +1,23 @@
+*design* DebussyLib (btIdent Verdi_V-2023.12-SP2)
+Command arguments:
+    +define+verilog
+    -sverilog
+    -f ../00_src/flist.f
+        ../00_src/encoder.sv
+        ../00_src/mux.sv
+        ../00_src/cla_6bit.sv
+        ../00_src/register.sv
+        ../00_src/comparator_6bit.sv
+        ../00_src/change_decode.sv
+        ../00_src/FSM.sv
+        ../00_src/vending_machine.sv
+        ../01_tb/testbench.sv
+    design_test.fsdb
+
+
+*Warning* too many digits in binary
+"../00_src/vending_machine.sv", 69: 
+Highest level modules:
+design_test
+
+Total	0 error(s),   1 warning(s)

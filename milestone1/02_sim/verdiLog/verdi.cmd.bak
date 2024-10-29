@@ -1,0 +1,87 @@
+verdiSetActWin -dock widgetDock_<Message>
+debImport "-sverilog" "-f" "../00_src/flist.f" "design_test.fsdb"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "design_test"
+verdiSetActWin -win $_nSchema_3
+schSelect -win $_nSchema3 -inst "dut"
+schSelect -win $_nSchema3 -inst "dut"
+schPushViewIn -win $_nSchema3
+verdiSetActWin -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/earth/mars/mars04/workspace/School_Pj/milestone1/02_sim/design_test.fsdb}
+verdiSetActWin -win $_nSchema_3
+schSelectAll -win $_nSchema3
+schAddSelectedToWave -win $_nSchema3 -clipboard
+wvDrop -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvScrollDown -win $_nWave2 1
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 0)}
+schDeselectAll -win $_nSchema3
+verdiSetActWin -win $_nSchema_3
+schSetOptions -win $_nSchema3 -instName on
+schSetOptions -win $_nSchema3 -portName on
+schZoomIn -win $_nSchema3 -pos 35745 13124
+schZoomIn -win $_nSchema3 -pos 35644 13274
+schZoomIn -win $_nSchema3 -pos 35682 13537
+schZoomOut -win $_nSchema3 -pos 43320 11226
+schZoomOut -win $_nSchema3 -pos 43320 11226
+schZoomOut -win $_nSchema3 -pos 43364 11138
+schZoomOut -win $_nSchema3 -pos 43362 11137
+schZoomOut -win $_nSchema3 -pos 46941 2879
+schZoomOut -win $_nSchema3 -pos 46941 2880
+schZoomIn -win $_nSchema3 -pos 61887 12341
+schZoomIn -win $_nSchema3 -pos 62048 12179
+schZoomIn -win $_nSchema3 -pos 62107 12058
+schZoomIn -win $_nSchema3 -pos 62108 12058
+schZoomIn -win $_nSchema3 -pos 62108 12057
+schZoomIn -win $_nSchema3 -pos 62107 12057
+schSelect -win $_nSchema3 -signal "comp_result"
+schZoomOut -win $_nSchema3 -pos 45534 17440
+schZoomOut -win $_nSchema3 -pos 45535 17439
+schZoomOut -win $_nSchema3 -pos 45534 17439
+schZoomOut -win $_nSchema3 -pos 45534 17438
+schZoomOut -win $_nSchema3 -pos 45535 17438
+schZoomOut -win $_nSchema3 -pos 45534 17437
+schZoomOut -win $_nSchema3 -pos 45534 17437
+schZoomOut -win $_nSchema3 -pos 20534 15794
+schZoomOut -win $_nSchema3 -pos 20306 12943
+schZoomIn -win $_nSchema3 -pos 21018 13940
+schZoomIn -win $_nSchema3 -pos 21018 13940
+schZoomIn -win $_nSchema3 -pos 21017 13939
+schZoomIn -win $_nSchema3 -pos 21198 14841
+schDeselectAll -win $_nSchema3
+schSelect -win $_nSchema3 -signal "change_rst"
+schDeselectAll -win $_nSchema3
+schZoomOut -win $_nSchema3 -pos 42264 4297
+schZoomOut -win $_nSchema3 -pos 42264 4410
+schZoomIn -win $_nSchema3 -pos 51991 11668
+schZoomIn -win $_nSchema3 -pos 51991 11669
+schZoomIn -win $_nSchema3 -pos 51992 11708
+schZoomIn -win $_nSchema3 -pos 51993 11797
+schZoomOut -win $_nSchema3 -pos 51679 11953
+schZoomOut -win $_nSchema3 -pos 51680 11952
+schZoomOut -win $_nSchema3 -pos 51679 11952
+schZoomOut -win $_nSchema3 -pos 51678 11952
+schZoomOut -win $_nSchema3 -pos 33491 9012
+verdiDockWidgetMaximize -dock windowDock_nSchema_3
+schZoomIn -win $_nSchema3 -pos -947 4641
+schSetOptions -win $_nSchema3 -pinName on
+schSelect -win $_nSchema3 -inst "encoder_block"
+schPushViewIn -win $_nSchema3
+schSelect -win $_nSchema3 -inst "encoder:SigOp2:10:10:Combo"
+schSelect -win $_nSchema3 -inst "encoder:SigOp2:10:10:Combo"
+schZoomOut -win $_nSchema3 -pos 4826 5525
+schZoomOut -win $_nSchema3 -pos 4827 5467
+schZoomIn -win $_nSchema3 -pos 5241 5323
+schZoomOut -win $_nSchema3 -pos 5242 5323
+schZoomOut -win $_nSchema3 -pos 5241 5323
+schZoomOut -win $_nSchema3 -pos 5241 5322
+schDeselectAll -win $_nSchema3
+srcShowCalling -win $_nTrace1
+schSelect -win $_nSchema3 -port "nickel"
+schPopViewUp -win $_nSchema3
+schDeselectAll -win $_nSchema3
+schZoomOut -win $_nSchema3 -pos 3497 9710
